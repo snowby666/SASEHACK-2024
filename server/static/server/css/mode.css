@@ -1,0 +1,77 @@
+:root{
+    --fact: #ecf2fd;
+    --head-box: linear-gradient(90deg,#66b6ea,#8743ff);
+    --head-text: #3d7aed;
+    --body-color1: #ecf2fd;
+    --body-color2: linear-gradient(90deg,#66b6ea,#8743ff);
+    --box: #031b4e;
+    --text-color: #031b4e;
+    --title: #031b4e;
+    --back: linear-gradient(90deg,#66b6ea,#8743ff);
+    --back-text: linear-gradient(90deg,#ecf2fd,#ecf2fd);
+    --border: #3d7aed;
+    --span: #ecf2fd;
+    --back-span: #202020;
+    --span-hover: #ecf2fd;
+    --span-text: rgba(3,27,78,.7);
+    --view: #151617;
+    --p: rgba(3,27,78,.7);
+    --container: #f6f9fe;
+}
+
+body.dark{
+    --fact: #0077ff;
+    --head-box:#4e4e4e;
+    --head-text: #202020;
+    --body-color1: #2b2b2b;
+    --body-color2: #202020;
+    --box: #0077ff;
+    --text-color: #CCC;
+    --title: #ecf2fd;
+    --back: #0077ff;
+    --back-text: linear-gradient(90deg,#ecf2fd,#ecf2fd);
+    --border: #0077ff;
+    --span: #000000;
+    --back-span: #ecf2fd;
+    --span-hover: #0077ff;
+    --span-text: #ecf2fd;
+    --view: #4e4e4e;
+    --p: #ecf2fd;
+    --container: rgba(32, 32, 32, 0.9);
+}
+
+.dark-light {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+  }
+.dark-light i {
+    position: absolute;
+    color: var(--text-color);
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dark-light i.sun{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dark-light.active i.sun{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dark-light.active i.moon{
+    opacity: 0;
+    pointer-events: none;
+}
+@media screen and (max-width: 968px) {
+    .dark-light {
+        height: unset;
+        margin: -10px 5px;
+    }
+}

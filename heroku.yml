@@ -1,0 +1,6 @@
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: daphne StressAPI.asgi:application --port $PORT --bind 0.0.0.0
+  # web: python3 manage.py runserver "0.0.0.0:$PORT" 

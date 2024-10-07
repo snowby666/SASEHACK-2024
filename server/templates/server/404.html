@@ -1,0 +1,178 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name='robots' content='index, follow' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="codestress, peakjourney, stress, coDestress, codestress online" />
+    <meta name="author" content="Snowby666" />
+    <meta name="description" content="coDestress Your Mental Assistant" />
+    <link rel="canonical" href="https://www.codestress.site/" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="coDestress - Mood Lifter: Music therapy for everyone" />
+    <meta property="og:description" content="Everyday app that empowers you to heal and lifts your mood through music therapy." />
+    <meta property="og:url" content="https://www.codestress.site/" />
+    <meta property="og:site_name" content="coDestress" />
+    <title>coDestress | Mental Assistant</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href='{% static "server/icon/apple-touch-icon.png" %}'>
+    <link rel="icon" type="image/png" sizes="32x32" href='{% static "server/icon/favicon-32x32.png" %}'>
+    <link rel="icon" type="image/png" sizes="16x16" href='{% static "server/icon/favicon-16x16.png" %}'>
+    <link rel="manifest" href="/manifest.json">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href='{% static "server/css/language.css" %}'/>
+    <style>
+        body,
+        html {
+        background: #000;
+        position: relative;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        }
+        #mainC {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-family: sans-serif;
+        max-width: 340px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+        }
+        #mainC .message {
+        font-size: 16px;
+        text-align: center;
+        }
+        #mainC .message h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 20vmin;
+        transform: skewY(-5deg);
+        transition: 0.4s ease-in-out all;
+        }
+        #mainC .message h1:hover {
+        text-shadow: 20px 20px 0 #0077ff;
+        }
+        @media (max-width: 300px) {
+        #mainC .message h1 {
+            font-size: 50vw;
+        }
+        }
+        #mainC .message h3 {
+        color: #0077ff;
+        font-size: 3vmin;
+        font-weight: lighter;
+        line-height: 1;
+        }
+        @media (max-width: 300px) {
+        #mainC .message h3 {
+            font-size: 5vw;
+        }
+        }
+        #mainC .footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        }
+        #mainC .footer a {
+        position: relative;
+        flex: 1;
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        border-radius: 3px;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        margin: 0 20px;
+        text-align: center;
+        padding: 20px 0;
+        overflow: hidden;
+        transition: all 0.2s ease-in-out;
+        z-index: 3;
+        }
+        @media (max-width: 300px) {
+        #mainC .footer a {
+            flex: 5 100%;
+            width: 100%;
+        }
+        }
+        #mainC .footer a:hover {
+        border: 1px solid #ffffff;
+        color: #121212;
+        }
+        #mainC .footer a:hover span {
+        width: 310px;
+        height: 310px;
+        }
+        #mainC .footer a span {
+        content: '';
+        position: absolute;
+        background: #0077ff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        transition: all 0.5s ease;
+        z-index: -1;
+        }
+        @media (max-width: 300px) {
+        #mainC .footer a span {
+            transition: all 0.2s ease-in;
+        }
+        }
+        #mainC .footer a span:active {
+        background: #0077ff;
+        }
+        #mainC .footer .legal {
+        text-align: center;
+        flex: 3;
+        color: rgba(204, 204, 204, 0.5);
+        }
+        @media (max-width: 300px) {
+        #mainC .footer .legal {
+            font-size: 4vw;
+            flex: 5 100%;
+            padding: 5px 10px;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <span id="content">
+    <div id="mainC">
+        <div class="message">
+          <h1>404</h1>
+          <h3 data-lang='en'>The page you seek does not exist</h3>
+          <h3 data-lang='vi'>Đường dẫn không hợp lệ</h3>
+        </div>
+        <div class="footer">
+          <a data-lang='en' href="{% url 'server:index.html' %}" title="home">Home <span></span></a>
+          <a data-lang='vi' href="{% url 'server:index.html' %}" title="home">Trang chủ <span></span></a>
+        </div>
+    </div>
+    </span>
+</body>
+<script>
+    let content = $('#content');
+    function getLang() {
+        let lang;
+        if (localStorage.getItem('currentLang') === null) {
+          lang = 'vi';
+        } else {
+          lang = JSON.parse(localStorage.getItem('currentLang')).toLowerCase();
+        }
+        content.attr('class', lang);
+      }
+      getLang();
+</script>
+</html>

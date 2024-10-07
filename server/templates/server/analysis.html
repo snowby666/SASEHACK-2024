@@ -1,0 +1,1648 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X5VWRCE9S5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-X5VWRCE9S5');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name='robots' content='index, follow' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="codestress, peakjourney, stress, coDestress, codestress online" />
+    <meta name="author" content="Snowby666" />
+    <meta name="description" content="coDestress Your Mental Assistant" />
+    <link rel="canonical" href="https://www.codestress.site/" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="coDestress - Mood Lifter: Music therapy for everyone" />
+    <meta property="og:description" content="Everyday app that empowers you to heal and lifts your mood through music therapy." />
+    <meta property="og:url" content="https://www.codestress.site/" />
+    <meta property="og:site_name" content="coDestress" />
+    <title>coDestress | Mental Assistant</title>
+
+    <link rel="stylesheet" href='{% static "server/css/mode.css" %}'/>
+    <!--? font -->
+    <link href='https://fonts.googleapis.com/css?family=M PLUS Rounded 1c' rel='stylesheet'>
+    <!--? Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--? Main CSS -->
+    <link rel="stylesheet" href='{% static "server/css/style.css" %}'/>
+    <!--? Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href='{% static "server/icon/apple-touch-icon.png" %}'>
+    <link rel="icon" type="image/png" sizes="32x32" href='{% static "server/icon/favicon-32x32.png" %}'>
+    <link rel="icon" type="image/png" sizes="16x16" href='{% static "server/icon/favicon-16x16.png" %}'>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="shortlink" href="https://www.codestress.site/" />
+    <script src="https://use.fontawesome.com/fe459689b4.js"></script>
+    <link href='{% static "server/c3/c3.css" %}' rel="stylesheet">
+    <!-- Load d3.js and c3.js -->
+    <script src='{% static "server/c3/docs/js/d3-5.8.2.min.js" %}'charset="utf-8"></script>
+    <script src='{% static "server/c3/c3.min.js" %}'></script>
+    <link rel="stylesheet" href='{% static "server/css/extra.css" %}'/>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href='{% static "server/css/analysis.css" %}'/>
+    <link rel="stylesheet" href='{% static "server/css/language.css" %}'/>
+    <link rel="stylesheet" href='{% static "server/chatbot/style.css" %}'/>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=tjw1nSmk"></script>
+    <script>
+      var urlcheck = '{{url}}';
+      if (urlcheck != '0'){
+        window.addEventListener("load", function() {
+            document.getElementById('skills').scrollIntoView();
+          }
+        );
+      }
+    </script>
+  </head>
+  <body class="hidden">
+    <!--?======================== Preloader start ========================= -->
+    <div class="preloader" id="preloader">
+      {% if label == '' %}
+      <div class="loading">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5.997cm" height="3.492cm">
+          <image
+            x="0px"
+            y="0px"
+            width="170px"
+            height="99px"
+            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKoAAABjCAMAAAA8T2vMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACmlBMVEUAd/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/////9GjV3OAAAA3HRSTlMACBwtP1p1jKO4wM3W293ezL+3oItyWD0rGQcBGzdgjrvc8vz78NmJMxcKWZjO8e3JkVMnBipinvmXWyQDOXjD9XE0e/7Ecyx0wmkUQezkljVevLRRDm7PxmEJ32fSXFTQSbqsE4r68wtWopDh/dRDDcWwfGpLMCkoLkBOdtPufgTmwZU6HoCz4iXohBEPaOBSBUIVfRi99nk4y6sM17WP5yBH6x9d+KY+AoM8yGZP6SOo6thfVe96HaS59EUv0bI7ho2FIq0QY20Sx3CUqpqnvspXr6GxUBrjbEwWsFzSqgAAAAFiS0dE3XBnsyEAAAAHdElNRQfmBxUSHiVZybUEAAAE1UlEQVR42tWb/V8URRjAjxIwRZIzCDk47/B4CQUJjo4uyPBQCo3OinzBlxLBlECOKDJFsCI0jBI00RILISGzrhTf8AWsjF7svexl/5h2b+/wOGZ3n92dnbn7/rrPPPv9zM1nZ+aZOZ1OA8LuuHNaeETk9LtmzIyaFX139Kyo2TH6OffExt0bPzdBixcqwZCYZJxnMifPZ9BYUlL1aeHp91HWzIhfsDAzi4GwKPv+nFwrJc+8B2xmC0jTR37Ug/aHSGsWFD68OF+Wpo9HTEXpBEWXOGYq0vRSvHRZCRHPxEcfK1Yjyg8FU+lyrUVX2B5X7clT9oRTQ0/ryicxeXqwPPW0QRvR8mdW4RT1sHrNWg1EIyqwi3JErcM8mSWUmjUR5Vi/AeMwMGx8VjNRjqXP4TJdsklTUY7KPByim6uqNTdlmC2O51WbbtVukE4mU+UoSNxGSJSjZrMK05wXFLyx2FKdX12rxLVuu1LR+hrwS5KjXQ22eS82hr80Lenl+KZXmnY4X91p3BU5R9+8W4ZrbUurIlPnbEj2Pa+9XrTxjbYMoSwFcwvtb7bvhcrG7FNgakyRSvvWpg67cz8o2duFndveAbmWvStX9IDEj19WWdTVLS9ledfBbMByvNYhL+2h90SSHXb1HIF1ZiCGvNij0rLvfyAjZckxwTzJvUZV26MC5/EPpVyzPwKn6zshkCNFv7JfjSdP9xqXhGu0E5hq4GN0gsxdGDx5treL73Wz+kBpSpGNd58cHMIlypHUMF/M9XAcIEcE8hf5pA2np4dTJtGO7ZFM4EC0+vR0PXZRjs+yxVxrJFr3TG3iCi/QRJTFuuxzEdcB0baxU+KP2rEO0UDcXwirfilWKugMjD5zVvOK2LDwhNsp3CouYL1/7ryySUkeFy4KqV4SbDM4Mjlyei4BUY5GgZVRqlCD+MlDvPkyIVGWK1eRqnsFwvfX+UdZOsrJmbIvP4lSNaODh675B60aJSnKYmhBqLrQsWN+IbXXiXYpz9ktU1RbkIE5/kNkJ3lRlhWB67l8NyrM7bdZM+Gf7mGkB3xhx1BBCYtvB3zVSslUp8tNnfRVRZYI0yaeZw3IzY+Try/dNv3mBipicGLpWHGKpinLt95yc9048vF3E/3+PbZlvmKsXT9EXo/tC0M//dFn2q6maESCUV996aYGdXmsZKz3mtponYCCOe81/Umjgxl8tHkXYLagN9Xd5E1/PkBbRJJB/rxUH/TjVKf7xWP6K4mNiUp+4+co+l9+SayeaSylkLYHgK2eTt1AWwOA1VPtlyq4BAXDnGlMK20NAENcRXYR8Ss6ShjlOhVSx6TP76zpH7QlQOyzsJvTQ7QtQHA7/2HaEiDCKhjmT9oSMP5it6dNtCVg9DJMB20HGLeymL9DYD3F8Q/DNNJ2AKJnjoXAcpqjf4Qx0nYAMs6YM9RnIUKD2ElLULH83Ikb6rMQ4V+mirYClDHmCm0FIIbmGbQVoLgZqsVpOSwYkXnxiB7He2kbgFl9mrYBlO6rt2grQDlSSdsAjP0gbQMwji7aBmCqaP+lDEx9mqaXfHDiHlefgxA7FN++Jq8aEsU/XjXYj1L9VNX/B4MUJa20DcD0B/8ZpY//aAvACZW9KkuY+hSkCJFaFUfwn6eHoqpmt7yx8z+ECzGqLlYmwwAAAABJRU5ErkJggg=="
+          />
+        </svg>
+      </div>
+      {% else %}
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5.997cm" height="3.492cm">
+          <svg x="50%" y="50%" width="258px" height="221px" overflow="visible"> 
+          <image
+            x="-129px" 
+            y="-110.5px" 
+            width="258px"
+            height="221px"
+            xlink:href="https://i.imgur.com/rhFNNOA.gif"
+          />
+          </svg>
+        </svg>
+      </div>
+      {% endif %}
+    </div>
+    <!--?======================== Preloader end ========================= -->
+
+    <!--?======================== Navbar start ========================= -->
+    <nav class="navbar">
+      <a href="/" class="logo">
+        <img src="https://i.imgur.com/2o3051s.gif" alt="logo" style="width: 40px; height: 40px" />
+        <h4 style="font-size:1.3rem;">coDestress</h4>
+      </a>
+      <ul>
+        <li id = 's1'><a class="active" href="#home" onclick="window.location.href = '{% url 'server:index.html' %}';"><span data-lang='en'>Home</span><span data-lang='vi'>Trang chủ</span></a></li>
+        <li id = 's2'><a href="#about"><span data-lang='en'>Profile</span><span data-lang='vi'>Hồ sơ</span></a></li>
+        <li id = 's3'><a href="#skills"><span data-lang='en'>Music</span><span data-lang='vi'>Âm nhạc</span></a></li>
+        <li id = 's4'><a href="#project"><span data-lang='en'>Analysis</span><span data-lang='vi'>Phân tích</span></a></li>
+        <li class='lan-loader'>
+          <div class="switch">
+            <div class="current">
+             <em style='padding-right:5px; padding-top:2px;'> 
+              <img id='flag' style='width:20px; height:20px; border-radius:50%;' src='https://i.imgur.com/7Qv1m2r.png'>
+             </em>
+              <span>en</span>
+              <em class="arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><title>ic_arrow_drop_down_18px</title>
+                    <g fill="#FFFFFF">
+                        <path d="M5 8l4 4 4-4z"></path>
+                    </g>
+                  </svg>
+              </em>
+            </div>
+  
+            <div class="options">
+              <ul class="options-list">
+                <li data-lang="en">English</li>
+                <li data-lang="vi">Tiếng Việt</li>
+              </ul>
+              <div id="trans-circle"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"> <g id="circle" fill="none" fill-rule="evenodd"> <circle id="bg" cx="60" cy="60" r="60" fill="#FFFFFF"/> </g> </svg>
+            </div>
+            
+          </div>
+        </li>
+        <li>
+          <div>
+          <div class="dark-light">
+            <i class='bx bx-moon moon'></i>
+            <i class='bx bx-sun sun'></i>
+          </div>
+          </div>
+        </li>
+        <li class="instruction"><div id='content2' style="position:relative; display:block;"><details>
+          <summary><p data-lang='en'>How it works</p><p data-lang='vi'>Cẩm nang</p><svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><circle cx="128" cy="180" r="12"></circle><path d="M127.9995,144.0045v-8a28,28,0,1,0-28-28" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg></summary>
+          <div>
+          <ol>
+            <p data-lang='en' class="li" style='margin:15px 0;'>Make sure your webcam is OPEN, then turn on the Analysis</p>
+            <p data-lang='vi' class="li" style='margin:15px 0;'>Đảm bảo webcam đang MỞ, sau đó bật chế độ Phân Tích</p>
+            <p><pre><code>
+              <img src="https://i.imgur.com/H3cCLF9.png" />
+            </code></pre></p>
+            <p data-lang='en' class="li" style='margin:15px 0;'>Monitor your real-time data visualization</p>
+            <p data-lang='vi' class="li" style='margin:15px 0;'>Theo dõi dữ liệu sức khỏe trực quan trong thời gian thực</p>
+            <p><pre><code>
+              <img src="https://i.imgur.com/isbxcve.png" />
+            </code></pre></p>
+            <p data-lang='en' class="li" style='margin:15px 0;'>Save or load the data as your wish</p>
+            <p data-lang='vi' class="li" style='margin:15px 0;'>Lưu hoặc tải dữ liệu theo ý muốn</p>
+            <p><pre><code>
+              <img src="https://i.imgur.com/43Ejxx3.png" />
+            </code></pre></p>
+            <p data-lang='en' class="li" style='margin:15px 0;'>Track the trend of your mental health</p>
+            <p data-lang='vi' class="li" style='margin:15px 0;'>Theo dõi xu hướng sức khỏe tinh thần</p>
+            <p><pre><code>
+              <img src="https://i.imgur.com/by36qEm.png" />
+            </code></pre></p>
+            <p data-lang='en' class="li" style='margin:15px 0;'>Feel free to edit information at any time</p>
+            <p data-lang='vi' class="li" style='margin:15px 0;'>Thoải mái chỉnh sửa thông tin mọi lúc</p>
+            <p><pre><code>
+              <img src="https://i.imgur.com/WbQkow4.png" />
+            </code></pre></p>
+            <p data-lang='en' class="li" style='margin:15px 0;'>Get a music playlist best suits your mood</p>
+            <p data-lang='vi' class="li" style='margin:15px 0;'>Nhận gợi ý danh sách bản nhạc phù hợp với tâm trạng</p>
+            <p><pre><code>
+              <img src="https://i.imgur.com/ASLPBJ5.png" />
+            </code></pre></p>
+          </ol>
+          </div>
+        
+        </details></div></li>
+      </ul>
+
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <!--?======================== Navbar end ========================= -->
+  <span id='content'>
+    <!--?======================== Home start ========================= -->
+    <section class="project" id="home">
+      <div class="box-container" style="padding: 0.5vw 2vw;">
+        <div class="box">
+         <div id="chart1" style="margin:30px; margin-bottom: 120px !important;"></div>
+         <div class="d-none" id="chart2" style="margin:30px; margin-bottom: 120px !important;"></div>
+         <div  class="content">
+          <div class="desc">
+            <p style="font-size:2vh;">{{timestamp}}</p>
+            <div class="btns">
+              <div>
+              <form action="{% url 'server:analysis' %}" method="POST">
+                {% csrf_token %}
+                  <div style="display: flex; text-direction:row;">
+                    <select class="scr-search" name="slot" style="cursor:pointer;">
+                      {%if slots %}
+                      {% for slot in slots%}
+                      <option value="{{slot}}" {% if loadslot == slot %} selected="selected" {% endif %}>{{slot}}</option>
+                      {% endfor %}
+                      {% endif %}
+                    </select>
+                    <button class="scr-btn" type="submit" name="load" value="1" style="cursor:pointer;"><span data-lang='en'>Load</span><span data-lang='vi'>Tải</span>
+                      <i class="ti ti-search"></i>
+                    </button>
+                  </div>
+              </form>
+              </div>
+              <div>
+                <form action="{% url 'server:analysis' %}" method="POST">
+                  {% csrf_token %}
+                <button class="scr-btn" type="submit" name="regression" value="1" style="cursor:pointer;"><span data-lang='en'>Predict</span><span data-lang='vi'>Dự đoán</span>
+                  <i class="ti ti-search"></i>
+                </form>
+              </div> 
+            </div>
+          </div>
+        </div>
+        </div>   
+      </div>
+  
+    </section>
+    <!--?======================== Home end ========================= -->
+
+    <!--?======================== About start ========================= -->
+    <section class="about" id="about">
+      <!--? about me start -->
+      <h2 data-lang='en' class="heading" style="font-size:5.5vmin;"><i class="fa fa-address-book"></i> {{username}}'s Profile</h2>
+      <h2 data-lang='vi' class="heading" style="font-size:5.5vmin;"><i class="fa fa-address-book"></i> Hồ Sơ Của {{username}}</h2>
+      <div class="about-me">
+        <div class="foto">
+          <img data-tilt src="https://i.imgur.com/IdlvChR.gif" alt="{{username}}" />
+        </div>
+        <div class="about-desc">
+          <div>
+          <label data-lang='en' style="color:#0077ff; font-size:30px;"><i class="fa fa-id-card-o"></i> Personal Info</label>
+          <label data-lang='vi' style="color:#0077ff; font-size:30px;"><i class="fa fa-id-card-o"></i> Thông Tin Cá Nhân</label>
+          <div style="font-size:0.5vw;">
+          <p data-lang='en'>Gender: {{profile.gender}}</p>
+          <p data-lang='vi'>Giới tính: {% if profile.gender == 'Male' %}Nam{% else %}Nữ{% endif %}</p>
+          <p data-lang='en'>Age: {{profile.age}}</p>
+          <p data-lang='vi'>Tuổi: {{profile.age}}</p>
+          </div>
+          <div style="margin-top:20px;">
+          <label data-lang='en' style="color:#0077ff; font-size:30px;"><i class="fa fa-heart"></i> Preference</label>
+          <label data-lang='vi' style="color:#0077ff; font-size:30px;"><i class="fa fa-heart"></i> Sở Thích Âm Nhạc</label>
+          <div style="font-size:0.5vw;">
+          <p data-lang='en'>Culture: {{dismarket}}</p>
+          <p data-lang='vi'>Thị trường: {{dismarket}}</p>
+          <p data-lang='en'>Genres: {%for genre in disgenres%}{{genre}}, {%endfor%}...</p>
+          <p data-lang='vi'>Thể loại: {%for genre in disgenres%}{{genre}}, {%endfor%}...</p>
+          <p data-lang='en'>Artists/Bands: {%for singer in disartistlist%}{{singer|truncatechars:15}}, {%endfor%}...</p>
+          <p data-lang='vi'>Nghệ sĩ/Ban nhạc: {%for singer in disartistlist%}{{singer|truncatechars:15}}, {%endfor%}...</p>
+          </div>
+          <a href="#" onclick="document.getElementById('id03').style.display='block'" class="facebook"
+            ><i class="fa fa-pencil-square-o"><span style="font-family: M PLUS Rounded\ 1c,SF UI Text,Helvetica Neue,Helvetica,Roboto,sans-serif;" data-lang='en'> Edit your info</span><span style="font-family: M PLUS Rounded\ 1c,SF UI Text,Helvetica Neue,Helvetica,Roboto,sans-serif;" data-lang='vi'> Chỉnh sửa thông tin</span></i>
+          </a>
+        </div>
+      </div>
+      <!--? about me end -->
+    </section>
+    <!--?======================== About end ========================= -->
+
+    <!--?======================== Skills start ========================= -->
+    <section class="skills" id="skills">
+      <h2 data-lang='en' class="heading" style="font-size:5.5vmin;"><i class="fas fa-music"></i> Music Therapy</h2>
+      <h2 data-lang='vi' class="heading" style="font-size:5.5vmin;"><i class="fas fa-music"></i> Trị Liệu Âm Nhạc</h2>
+      <div class="container">
+        <div class="viewall">
+          <h2 style="text-transform: none; color: white; font-size:2.9vmin;">
+            {% if label != '' %}
+            <span data-lang='en'>
+            {{label}}
+            </span>
+            <span data-lang='vi'>
+            {% if label == "You seem to be under severe stress!" %}
+              Có vẻ bạn đang có dấu hiệu trầm cảm!
+            {% elif label == "You seem to be under mild stress!" %}
+              Có vẻ bạn đang căng thẳng nhẹ!
+            {% elif label == "You are in a good mood!" %}
+              Bạn đang có tâm trạng tốt, hãy duy trì nhé!
+            {% else %}
+              Năng lượng tích cực của bạn thật tuyệt vời!
+            {% endif %}
+            </span>
+            {% else %}
+            <span data-lang='en'>Let's explore your inside symphony!</span><span data-lang='vi'>Cùng khám phá giai điệu bên trong bạn!</span>{% endif %}</h2>
+          <div>
+            <form action="{% url 'server:analysis' %}" method="POST">
+              {% csrf_token %}
+                <div class="src-container" >
+           
+                  <select class="scr-search" name="slot" style="cursor:pointer;">
+                    {%if slots %}
+                    {% for slot in slots%}
+                    <option value="{{slot}}" {% if disslot == slot %} selected="selected" {% endif %}>{{slot}}</option>
+                    {% endfor %}
+                    {% endif %}
+                  </select>
+       
+                  <select data-lang='en' class="scr-search" name="rank" style="cursor:pointer;">
+                    {%if ranks %}
+                    {% for rank in ranks%}
+                    <option value="{{rank}}" selected="selected">{{rank}}</option>
+                    {% endfor %}
+                    {% endif %}
+                  </select>
+                  <select data-lang='vi' class="scr-search" name="rank" style="cursor:pointer;">
+                    {%if ranks %}
+                    {% for rank in ranks%}
+                    <option value="{{rank}}" selected="selected">{% if rank == 'Most Popular' %}Nổi Tiếng{% else %}Ít Ưa Chuộng{% endif %}</option>
+                    {% endfor %}
+                    {% endif %}
+                  </select>
+                
+                  <button class="scr-btn" type="submit" name="recommend" value="1" style="cursor:pointer;"><span data-lang='en'>Recommend</span><span data-lang='vi'>Khám phá</span>
+                    <i class="ti ti-search"></i>
+                  </button>
+            
+                </div>
+            </form>
+          </div>
+        </div>
+        {% if error == '0' %}
+        {% if notify == '0'%}
+        <div class="row" id="skillsContainer">
+          {% if url != '0' %}
+          {% for i in url %}
+          <div data-tilt class="bar shine">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/{{i}}?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+          {% endfor %}
+          {% endif %}
+        </div>
+        {% else %}
+        <div style="display:block; text-align:center; margin-bottom:30px; font-size:2.7vmin;">
+          <h4 data-lang='en'>Oopsie, we couldn't find any songs that match your music taste. However, we got some similar pieces for you!<h4> 
+          <h4 data-lang='vi'>Mình không tìm thấy bài nào đúng với sở thích của bạn. Tuy nhiên mình có một số bài rất hợp với tâm trạng của bạn lúc này!<h4> 
+        </div>
+        <div class="row" id="skillsContainer">
+          {% for u in url %}
+            <div data-tilt class="bar">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/{{u}}?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% else %}
+        <script>
+          function NoData(){
+            window.addEventListener('load',function(){
+            if (findLang == 'en') {
+              Swal.fire({
+                toast: true,
+                icon: 'error',
+                title: 'Oopsie! There is no data in that file',
+                animation: true,
+                position: 'top-right',
+                showConfirmButton: false,
+                timer: 7000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                  toast.addEventListener('mouseenter', Swal.stopTimer)
+                  toast.addEventListener('mouseleave', Swal.resumeTimer)}}
+                )
+            } else if (findLang == 'vi') {
+              Swal.fire({
+                toast: true,
+                icon: 'error',
+                title: 'Không có dữ liệu trong file này',
+                animation: true,
+                position: 'top-right',
+                showConfirmButton: false,
+                timer: 7000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                  toast.addEventListener('mouseenter', Swal.stopTimer)
+                  toast.addEventListener('mouseleave', Swal.resumeTimer)}}
+                )
+            }
+            });};
+          window.addEventListener("load", function() {
+            document.getElementById('skills').scrollIntoView();
+          });
+          NoData();
+        </script>
+        {% endif %}
+      </div>
+    </section>
+    <!--?======================== Skills end ========================= -->
+
+    <!--?======================== Project start ========================= -->
+    <section class="project" id="project">
+      <h2 data-lang='en' class="heading" style="font-size:5.5vmin;"><i class="fas fa-laptop-code"></i> Analysis</h2>
+      <h2 data-lang='vi' class="heading" style="font-size:5.5vmin;"><i class="fas fa-laptop-code"></i>Phân Tích</h2>
+      {% if username %}
+      <div class="box-container" style="display:block;">
+      <div class="scr-padding" style="margin-bottom:50px;">
+        <div style=
+        "
+        position:relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;">
+          <div class="btn-group">
+            <form method="POST" action="{% url 'server:analysis' %}">
+            {% comment %} <span style="color:#fff; padding-left:20px; font-size:3vmin;"><span data-lang='en'>Current Mode : </span><span data-lang='vi'>Chế Độ : </span></span> {% endcomment %}
+            {% csrf_token %}
+            <span id="manumode">
+            <button id="light" type="submit" class="active mode pr-4 pl-4 border-0" name='changemode'><span data-lang='en'>Manual</span><span data-lang='vi'>Thủ công</span></button>
+            </span>
+            <span id="automode">
+            <button id="dark" type="submit" class="mode pr-4 pl-4 border-0" name='changemode'><span data-lang='en'>Auto</span><span data-lang='vi'>Tự động</span></button>
+            </span>   
+            <span>
+              <a type="button" style="color:#fff; padding-left:15px; cursor:pointer;" onclick="Info();"><span><i class="fas fa-question-circle"></i></span><span data-lang='en'> Info</span><span data-lang='vi'> Chỉ dẫn</span></a>
+            </span>
+            </form>
+          </div> 
+        </div>
+          <div class="box-src">
+            <video id="client" style='display:none;'autoplay playsinline></video>
+            <canvas style='display:none;' id="canvas" width="300" height="270"></canvas>
+            <div id="scr1"  class="d-none">
+              {% comment %} <img id="video" src='' alt="screen"> {% endcomment %}
+            </div>
+            <div id="scr2">
+              <img src="https://i.imgur.com/MWndAYy.gif" alt="screen">
+            </div>
+            <div class="content-src">
+              <div class="tag-src">
+                <h3 data-lang='en'>Toolbar</h3>
+                <h3 data-lang='vi'>Thanh công cụ</h3>
+              </div>
+              <div class="desc-src">
+                {% comment %} < class="btns-src"> {% endcomment %}
+                  <div class="scr-btn-div">
+                    <form id = "scr-form-1" class="form" method="POST" action="{% url 'server:analysis' %}">
+                        {% csrf_token %}
+                        <button class="scr-btn d-none" id ="1" type="submit" value='-1'  name='sender' style="cursor:pointer;"><span data-lang='en'>Stop</span><span data-lang='vi'>Kết thúc</span></button>
+                    </form>
+                    <form id = "scr-form-2" class="form" method="POST" action="{% url 'server:analysis' %}">
+                      {% csrf_token %}
+                      <button class="scr-btn" id = "2" type="submit" value='1'  name='sender2' style="cursor:pointer;"><span data-lang='en'>Start</span><span data-lang='vi'>Bắt đầu</span></button>
+                    </form>
+                  </div>
+                  <div id="misc">
+                    <form action="{% url 'server:analysis' %}" method="POST">
+                      {% csrf_token %}
+                        <div style="display: flex; text-direction:row;">
+                          <select id="slot" class="scr-search" name="slot" style="cursor:pointer;">
+                            {%if slots %}
+                            {% for slot in slots%}
+                            <option value="{{slot}}"  {% if selectedslot == slot %} selected="selected" {% endif %}>{{slot}}</option>
+                            {% endfor %}
+                            {% endif %}
+                          </select>
+                          <button id="save" class="scr-btn" type="submit" name="save" value="1" style="cursor:pointer;" onclick="SuccessSave();"><span data-lang='en'>Save</span><span data-lang='vi'>Lưu</span>
+                            <i class="ti ti-search"></i>
+                          </button>
+                        </div>
+                    </form>
+                  </div>
+                {% comment %} </div> {% endcomment %}
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+      {% endif %}
+      <div class="d-none" id="embed-iframe"></div>
+
+      <script type="text/javascript">
+        try {
+        window.onSpotifyIframeApiReady = (IFrameAPI) => {
+          let element = document.getElementById('embed-iframe');
+          let options = {
+              uri: 'spotify:episode:7makk4oTQel546B0PZlDM5',
+              width:'0',
+              height:'0'
+            };
+          let callback = async (EmbedController) => {
+            setInterval(async function() {
+                try {
+                  if(trackurl != '' && trackurl != prevtrack2 && speechdone == true){
+                      prevtrack2 = trackurl;
+                      await new Promise(resolve => setTimeout(resolve, 1000));
+                      await EmbedController.loadUri('spotify:track:'+trackurl);
+                      setTimeout(function(){
+                          EmbedController.play();
+                      }, 5000);
+                  }
+                } catch(err) {
+                  if(trackurl != '' && trackurl != prevtrack2 && speechdone == true){
+                    EmbedController.loadUri('spotify:track:'+trackurl);
+                    setTimeout(function(){
+                      EmbedController.play();
+                    }, 2000);
+                  }
+                }
+            }, 10000);
+          };
+          IFrameAPI.createController(element, options, callback);
+        }; } catch(err) {
+          window.location.href = "{% url 'server:index.html' %}"
+        }
+
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+          var sleepdelay = 320;
+          var sleepdelay2 = 320;
+          var jpegQuality = 0.2; // adjust the quality to fit your needs
+        } else {
+          var sleepdelay = 230;
+          var sleepdelay2 = 230;
+          var jpegQuality = 0.5;
+        }
+
+        var username = '{{username}}';
+
+        //Get current Language
+        var findLang;
+        var el2 = $('.switch');
+        let cur2 = el2.find('.current');
+        var flag = document.getElementById('flag');
+        var enflag = 'https://i.imgur.com/7Qv1m2r.png';
+        var viflag = 'https://i.imgur.com/44VLMLU.png';
+        if (localStorage.getItem('currentLang') === null) {
+          findLang = cur2.find('span').text();
+          if (findLang == 'en') {
+            flag.src = enflag;
+          } else {
+            flag.src = viflag;
+          }
+        } else {
+          findLang = JSON.parse(localStorage.getItem('currentLang')).toLowerCase();
+          if (findLang == 'en') {
+            flag.src = enflag;
+          } else {
+            flag.src = viflag;
+          }
+        }
+        var options2 = el2.find('.options li');
+        options2.on('click', function(e) {
+          findLang = $(this).data('lang');
+          if (findLang == 'en') {
+            flag.src = enflag;
+          } else {
+            flag.src = viflag;
+          }
+        });
+
+        if (username != 0){
+        var csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
+        var video = document.getElementById('client');
+        
+        video.width = 300;
+        video.height = 260;
+        }
+
+        var ws_scheme = window.location.protocol == "https:" ? "wss" : "ws";
+
+        var speechdone = false;
+        var prevtrack = null;
+        var prevtrack2 = null;
+        var trackurl = '';
+        var artist = '';
+        var trackname = '';
+        var speech = '';
+        var duration = 0;
+        var message;
+
+        var scanmode = 0;
+        var mode = 0;
+        //var imageObject = document.getElementById("video");
+
+        //Trigger user click event
+        responsiveVoice.enableWindowClickHook();
+        responsiveVoice.clickEvent();
+        responsiveVoice.enableEstimationTimeout = false;
+
+        //window.addEventListener('load',function(){document.getElementById("voice").click();});
+
+        $(document).ready(function(){
+          
+          $(".mode").click(function(){
+            $(".mode").removeClass("active");
+            $(this).addClass("active");
+          });
+          $("#automode").click(function(){
+            scanmode = 1;
+            //$("#dark").addClass("hidechart");
+            $("#misc").addClass("d-none");
+          });
+          $("#manumode").click(function(){
+            scanmode = 0;
+            //$("#dark").removeClass("hidechart");
+            $("#misc").removeClass("d-none");
+          });
+
+          $('#2').click(function(){
+            mode = 1;
+
+            var ws = new WebSocket(
+              ws_scheme + '://' + window.location.host + '/'
+            );
+            ws.onopen = (event) => {
+                console.log('websocket connected!!!');
+            };
+            function sleep2(ms) {
+              return new Promise(resolve => setTimeout(resolve, ms));
+            }
+            ws.onmessage = async (event) => {
+            //imageObject.src = "data:image/jpeg;base64," + event.data;
+            var img = new Image();
+            img.src = 'data:image/jpeg;base64,' + event.data;
+            // Update the img element with the new image
+            document.getElementById('scr1').innerHTML = '';
+            document.getElementById('scr1').appendChild(img);
+            await sleep2(sleepdelay2);
+            };
+            ws.onclose = (event) => {
+                console.log('Close');
+            };
+            if (navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function(stream) {
+                video.srcObject = stream;
+                video.play();
+                var width = video.width;
+                var height = video.height;
+                var counter = 0;
+                var playback = true;
+
+                function timer(ms) {
+                  return new Promise(resolve => setTimeout(() => {
+                    playback = true;
+                    resolve();
+                  }, ms));
+                }
+                
+                function sleep(ms) {
+                  return new Promise(resolve => setTimeout(resolve, ms));
+                }
+
+                async function request() {
+                  try {
+                    response = await $.getJSON('{% url "server:speech" %}');
+                    speech = response['result'];
+                    trackurl = response['trackurl'];
+                    duration = response['duration'] + 8000;
+                    artist = response['artist'];
+                    trackname = response['trackname'];
+                
+                    if (trackurl != '' && trackurl != prevtrack) {
+                      if (findLang == 'en') {
+                        setTimeout(() => {
+                          responsiveVoice.speak(speech + ' Now playing. ' + trackname + ' by. ' + artist,"UK English Female",{volume:1});
+                        },500);
+                      } else {
+                        if (speech == "You seem to be under severe stress!") {
+                          message = "Có vẻ bạn đang có dấu hiệu trầm cảm." + ' Đang mở bài. ' + trackname + ' bởi. ' + artist;
+                        } else if (speech == "You seem to be under mild stress!") {
+                          message = "Có vẻ bạn đang căng thẳng nhẹ." + ' Đang mở bài. ' + trackname + ' bởi. ' + artist;
+                        } else if (speech == "You are in a good mood!") {
+                          message = "Bạn đang có tâm trạng tốt, hãy duy trì nhé." + ' Đang mở bài. ' + trackname + ' bởi. ' + artist;
+                        } else {
+                          message = "Năng lượng tích cực của bạn thật tuyệt vời." + ' Đang mở bài. ' + trackname + ' bởi. ' + artist;
+                        }
+                
+                        setTimeout(() => {
+                          responsiveVoice.speak(message, "Vietnamese Female", {volume:1});
+                        }, 500);
+                      }
+                    }
+                
+                    prevtrack = trackurl;
+                    setTimeout(() => {
+                      speechdone=true;
+                      if (trackname != '' && artist != ''){
+                      MusicPlayer(trackname, artist);}
+                    },2000);
+                    await timer(duration);
+                  } catch (error) {
+                    console.error(error);
+                  }
+                }
+
+                {% comment %} async function render() {
+                  context.drawImage(video, 0, 0, 300, 270);
+                  canvas.toBlob(function(blob) {
+                    if (ws.readyState == WebSocket.OPEN) {
+                        if (mode == 1){
+                          ws.send(blob);
+                        } else {
+                          ws.send(new Uint8Array([]));
+                        }
+                    }
+                  }, 'image/jpeg', jpegQuality);
+                  if (scanmode == 1){
+                    ++ counter;
+                    if (counter > 149 && playback == true) {
+                      counter = 0; 
+                      playback = false;
+                      request();
+                  }}
+
+                  await sleep(sleepdelay);
+                  requestAnimationFrame(render);
+                }
+                render(); {% endcomment %}
+
+                async function render() {
+                  while (mode == 1) {
+                    await new Promise(resolve => setTimeout(resolve, sleepdelay));
+                    context.drawImage(video, 0, 0, 300, 270);
+                    canvas.toBlob(function(blob) { 
+                      if (ws.readyState == WebSocket.OPEN) { 
+                        if (mode == 1){ 
+                          ws.send(blob); 
+                        } else { 
+                          ws.send(new Uint8Array([])); 
+                        } 
+                      } 
+                    }, 'image/jpeg', jpegQuality); 
+                    if (scanmode == 1){ 
+                      ++ counter; 
+                      if (counter > 149 && playback == true) { 
+                        counter = 0; 
+                        playback = false; 
+                        request(); 
+                      }
+                    }
+                  }
+                } 
+                render();
+
+            });}
+
+            setTimeout(function(){
+              jQuery('#scr2').addClass('d-none');
+              jQuery('#2').addClass('d-none');
+              jQuery('#scr1').removeClass('d-none');
+              jQuery('#1').removeClass('d-none');
+            },500);
+
+          });
+
+          $('#1').click(function(){
+            video.pause();
+            video.srcObject.getVideoTracks()[0].stop();
+            video.srcObject = null;
+            mode = 0;
+            jQuery('#scr1').addClass('d-none');
+            jQuery('#1').addClass('d-none');
+            jQuery('#scr2').removeClass('d-none');
+            jQuery('#2').removeClass('d-none');
+          });
+
+          $(document).on('click','#scr-form-1', function(event){
+            event.preventDefault();
+            $.ajax({
+                headers: {'X-CSRFToken': csrftoken},
+                type:'POST',
+                url:'{% url "server:analysis" %}',
+                data:
+                {
+                    sender: $("#1").val()
+                },
+                success:function(event){
+                  if (trackurl != ''){
+                  const spotifyEmbedWindow = document.querySelector('iframe[src*="spotify.com/embed"]').contentWindow;
+                  spotifyEmbedWindow.postMessage({command: 'pause'}, '*');}
+                  }
+                })
+          });
+
+          $(document).on('click','#scr-form-2', function(event){
+            event.preventDefault();
+            $.ajax({
+                headers: {'X-CSRFToken': csrftoken},
+                type:'POST',
+                url:'{% url "server:analysis" %}',
+                data:
+                {
+                    sender2: $("#2").val()
+                },
+                success:function(event){
+                  if (trackurl != ''){
+                  const spotifyEmbedWindow = document.querySelector('iframe[src*="spotify.com/embed"]').contentWindow;
+                  spotifyEmbedWindow.postMessage({command: 'resume'}, '*');}
+                  }
+                })
+          });  
+
+          $(document).on('click','#manumode', function(event){
+            event.preventDefault();
+            $.ajax({
+                headers: {'X-CSRFToken': csrftoken},
+                type:'POST',
+                url:'{% url "server:analysis" %}',
+                data:
+                {
+                    changemode: '0'
+                },
+                success:function(event){
+                  if (trackurl != ''){
+                  const spotifyEmbedWindow = document.querySelector('iframe[src*="spotify.com/embed"]').contentWindow;
+                  spotifyEmbedWindow.postMessage({command: 'pause'}, '*');} 
+                  }
+                })
+          });  
+
+          $(document).on('click','#automode', function(event){
+            event.preventDefault();
+            $.ajax({
+                headers: {'X-CSRFToken': csrftoken},
+                type:'POST',
+                url:'{% url "server:analysis" %}',
+                data:
+                {
+                    changemode: '1'
+                },
+                success:function(event){
+                  if (trackurl != ''){
+                  const spotifyEmbedWindow = document.querySelector('iframe[src*="spotify.com/embed"]').contentWindow;
+                  spotifyEmbedWindow.postMessage({command: 'pause'}, '*');}
+                  }
+                })
+          });  
+
+          $(document).on('click','#save', function(event){
+            jQuery('#scr1').addClass('d-none');
+            jQuery('#1').addClass('d-none');
+            jQuery('#scr2').removeClass('d-none');
+            jQuery('#2').removeClass('d-none');
+            video.pause();
+            video.srcObject.getVideoTracks()[0].stop();
+            video.srcObject = null;
+            event.preventDefault();
+            $.ajax({
+                headers: {'X-CSRFToken': csrftoken},
+                type:'POST',
+                url:'{% url "server:analysis" %}',
+                data:
+                {
+                    save: $("#save").val(),
+                    slot: $("#slot").val()
+                },
+                success:function(event){
+                    if(mode == 1) {
+                      mode = 0;
+                    }
+                  }
+                })
+          }); 
+
+        });
+      
+        var toastMixin = Swal.mixin({
+          toast: true,
+          icon: 'success',
+          title: 'General Title',
+          animation: false,
+          position: 'top-right',
+          showConfirmButton: false,
+          timer: 7000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+          }
+        });
+          
+        function Info(){
+          if (findLang == 'en'){
+          Swal.fire({
+            toast: true,
+            icon: 'info',
+            title: 'Manual Mode: Data is manually handled and manageable.'+'\n'+'Auto Mode: Automatic stress alerts and music therapy for busy people.',
+            animation: true,
+            position: 'top-right',
+            showConfirmButton: false,
+            timer: 20000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)}}
+            )
+          } else if (findLang == 'vi') {
+            Swal.fire({
+              toast: true,
+              icon: 'info',
+              title: 'Chế độ Thủ công: Bạn sẽ tự quản lý dữ liệu sức khỏe của mình.'+'\n'+'Chế độ Tự động: Tự động cảnh báo stress và thực hiện trị liệu âm nhạc dành cho người bận rộn.',
+              animation: true,
+              position: 'top-right',
+              showConfirmButton: false,
+              timer: 20000,
+              timerProgressBar: true,
+              didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)}}
+              )
+            }};
+
+        function ucwords(str) {
+          return str.replace(/^([a-z])|\s+([a-z])/g, function ($1) {
+              return $1.toUpperCase();
+          });
+        };
+
+        async function MusicPlayer(trackname, artist) {
+          try {
+            let title = findLang == 'en' ? `Now playing ${ucwords(trackname)} by ${ucwords(artist)}` : `Đang mở bài ${ucwords(trackname)} bởi ${ucwords(artist)}`;
+            let result = await new Promise((resolve) => {
+              Swal.fire({
+                toast: true,
+                icon: 'info',
+                title: title,
+                animation: true,
+                position: 'top-right',
+                showConfirmButton: false,
+                {% comment %} timer: 30000,
+                timerProgressBar: true, {% endcomment %}
+                didOpen: (toast) => {
+                  toast.addEventListener('mouseenter', Swal.stopTimer)
+                  toast.addEventListener('mouseleave', Swal.resumeTimer)
+                  resolve(true);
+                }
+              });
+            });
+            return result;
+          } catch (error) {
+            console.error(error);
+          }
+        };
+
+        function SuccessSave(){
+          if (findLang == 'en') {
+          Swal.fire({
+            toast: true,
+            icon: 'success',
+            title: 'Saved Successfully!',
+            animation: true,
+            position: 'top-right',
+            showConfirmButton: false,
+            timer: 7000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)}}
+            )
+          } else if (findLang == 'vi') {
+            Swal.fire({
+              toast: true,
+              icon: 'success',
+              title: 'Lưu thành công!',
+              animation: true,
+              position: 'top-right',
+              showConfirmButton: false,
+              timer: 7000,
+              timerProgressBar: true,
+              didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)}}
+            )
+          }};
+
+      </script>
+      <script src="https://open.spotify.com/embed-podcast/iframe-api/v1"></script>
+
+      <div class="viewall">
+        <h3 data-lang='en' style="text-transform: none; color: white; line-height: 5rem; font-size:3.3vmin; padding: 0 5vw; white-space: nowrap; overflow: hidden;">How is your day going? Share your story with us!</h3>
+        <h3 data-lang='vi' style="text-transform: none; color: white; line-height: 5rem; font-size:3vmin; padding: 0 3vw; white-space: nowrap; overflow: hidden;">Hôm nay của bạn như thế nào? Hãy chia sẻ với chúng tôi!</h3>
+        <div>
+          <a href="{% url 'server:index.html' %}" class="btn more"
+            ><span><span data-lang='en'>Home</span><span data-lang='vi'>Trang chủ</span></span>
+            <i class="fas fa-house-user"></i>
+          </a>
+          <a href="{% url 'server:log_out' %}" class="btn email"
+            ><span><i class="fa fa-sign-in"></i><span data-lang='en'>Logout</span><span data-lang='vi'>Đăng xuất</span></span>
+          </a>
+        </div>
+      </div>
+
+    <!--? ======================= Modal Form ==================+======= -->
+    </section>
+    <div id="id03" class="modal">
+        
+      <form class="modal-content animate modal-scale" action="{% url 'server:analysis' %}" method="POST" style='border-radius:10px;'>
+        {% csrf_token %}
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+          </div>
+          <div id="sform1">
+            <div class="container">
+              <div style="margin-bottom:20px;">
+              <label style="display: block; text-align: center; font-size:2.5vmin;"><span data-lang='en'>1. Which culture is your musical preference?</span><span data-lang='vi'>1. Thị trường âm nhạc yêu thích của bạn?</span></label>
+              </div>
+              <select id="marketbox" name="market" class="custom-select">
+                <option value="VN">Vietnam</option>
+                <option value="KR">Korea</option>
+                <option value="JP">Japan</option>
+                <option value="CN">China</option>
+                <option value="IN">India</option>
+                <option value="US">US</option>
+                <option value="UK">UK</option>
+                <option value="EU">EU</option>
+              </select>
+              <div id="footer1">
+              <button id="s1-next" class = "modal-btn" type="button"><span data-lang='en'>Next</span><span data-lang='vi'>Tiếp tục</span></button>
+              </div>
+            </div>
+          </div>
+
+          <div id="sform2" class="d-none">
+            <div class="container">
+              <div style="margin-bottom:20px;">
+                <label style="display: block; text-align: center; font-size:2.5vmin;"><span data-lang='en'>2. Which music genre best describes your music taste?</span><span data-lang='vi'>2. Những thể loại âm nhạc mà bạn yêu thích?</span></label>
+              </div>
+              <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <select name="genre" class="custom-select" multiple="multiple">
+                    <option value="pop">Pop</option>
+                    <option value="hip-hop">Hip Hop</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="classical">Classical</option>
+                    <option value="r-n-b">R&B</option>
+                    <option value="blues">Blues</option>
+                    <option value="country">Country</option>
+                    <option value="acoustic">Acoustic</option>
+                  </select>
+                </div>
+                <div class="mySlides fade">
+                  <select name="genre" class="custom-select" multiple="multiple">
+                    <option value="romance">Romance</option>
+                    <option value="soul">Soul</option>
+                    <option value="reggae">Reggae</option>
+                    <option value="folk">Folk</option>
+                    <option value="samba">Samba</option>
+                    <option value="garage">Garage</option>
+                    <option value="disco">Disco</option>
+                    <option value="rap">Rap</option>
+                  </select>                
+                </div>
+                <div class="mySlides fade">
+                  <select name="genre" class="custom-select" multiple="multiple">
+                    <option value="party">Party</option>
+                    <option value="dance">Dance</option>
+                    <option value="movies">Movies</option>
+                    <option value="latin">Latin</option>
+                    <option value="holidays">Holidays</option>
+                    <option value="groove">Groove</option>
+                    <option value="indie">Indie</option>
+                    <option value="house">House</option>
+                  </select>    
+                </div>
+                <div class="mySlides fade">
+                  <select name="genre" class="custom-select" multiple="multiple">
+                    <option value="guitar">Guitar</option>
+                    <option value="piano">Piano</option>
+                    <option value="violin">Violin</option>
+                    <option value="bass">Bass</option>
+                    <option value="drum">Drum</option>
+                    <option value="opera">Opera</option>
+                    <option value="ambient">Ambient</option>
+                    <option value="road-trip">Road Trip</option>
+                  </select>    
+                </div>
+                <div class="mySlides fade">
+                  <select name="genre" class="custom-select" multiple="multiple">
+                    <option value="v-pop">V-Pop</option>
+                    <option value="k-pop">K-Pop</option>
+                    <option value="j-pop">J-Pop</option>
+                    <option value="anime">Anime</option>
+                    <option value="dubstep">Dubstep</option>
+                    <option value="chill">Chill</option>
+                    <option value="edm">Edm</option>
+                    <option value="lo-fi">Lo-fi</option>
+                  </select>    
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+              </div>
+                
+                <div style="text-align:center; margin-top:20px;">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span> 
+                  <span class="dot" onclick="currentSlide(5)"></span> 
+                </div>
+              <div id="footer2" style="display:flex;">
+              <button id="s2-prev" class = "modal-btn" type="button"><span data-lang='en'>Prev</span><span data-lang='vi'>Trước đó</span></button>
+              <button id="s2-next" class = "modal-btn" type="button"><span data-lang='en'>Next</span><span data-lang='vi'>Tiếp tục</span></button>
+              </div>
+            </div>
+          </div>
+
+          <div id="sform3" class="d-none">
+            <div class="container">
+              <div style="margin-bottom:20px;">
+                <label style="display: block; text-align: center; font-size:2.5vmin;"><span data-lang='en'>3. What are some of your favorite bands/artists?</span><span data-lang='vi'>3. Bạn thường hay nghe nhạc của nghệ sĩ/ban nhạc nào?</span></label>
+              </div>
+              <div>
+              <input name="singer" class="modal-placeholder" placeholder="No. 1 (required)" required autocomplete="off" >
+              </div>
+              <div>
+              <input name="singer" class="modal-placeholder"  placeholder="No. 2 (optional)" autocomplete="off" >
+              </div>
+              <div>
+              <input name="singer" class="modal-placeholder" placeholder="No. 3 (optional)" autocomplete="off" >
+              </div>
+              <div>
+              <input name="singer" class="modal-placeholder" placeholder="No. 4 (optional)" autocomplete="off" >
+              </div>
+              <div style="display:flex;">
+              <button id="s3-prev" class = "modal-btn" type="button"><span data-lang='en'>Prev</span><span data-lang='vi'>Trước đó</span></button>
+              <button id="s3-next" class = "modal-btn" name="preference" value="1" type="submit"><span data-lang='en'>Submit</span><span data-lang='vi'>Hoàn tất</span></button>
+              </div>
+            </div>
+          </div>
+          
+      </form>
+    </div>
+  </body>
+    <!--?======================== Project end ========================= -->
+
+    <!--?======================== Footer start ========================= -->
+    <footer class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>coDestress</h3>
+          <p data-lang='en'>Everyday app that empowers you to heal and lifts your mood through music therapy.<br /></p>
+          <p data-lang='vi'>Ứng dụng hàng ngày giúp bạn chữa lành và cải thiện tâm trạng thông qua liệu pháp âm nhạc.<br /></p>
+          <p>
+            PeakJourney &copy; 2024-<script>document.write(new Date().getFullYear());</script>
+            <br />
+          </p>
+        </div>
+
+        <div class="box right">
+          <h3 data-lang='en'>Contact</h3>
+          <h3 data-lang='vi'>Liên hệ</h3>
+          <p style="white-space: nowrap;"><i class="fa fa-envelope" style="margin: unset; animation: unset; font-size: unset;"></i>Bao Ngo</p>
+          <p style="white-space: nowrap;"><i class="fab fa-github"></i>Snowby666</p>
+          <br />
+          <div class="share">
+            <a href="mailto:giabao070206@gmail.com" class="fa fa-envelope" style="margin: unset; animation: unset; font-size: unset; margin-right: 10px;" aria-label="Email" target="_blank"></a>
+            <a href="https://github.com/snowby666" class="fab fa-github" aria-label="Github" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="credit">Made with <i class="fa fa-heart pulse"></i> by <a href="https://snowby666.github.io/"  target="_blank"> Bao Ngo</a></h1>
+    </footer>
+  
+    <!--?======================== Footer end ========================= -->
+
+    <!--?======================== Scroll Up ========================= -->
+    <a href="#home" aria-label="ScrollTop" class="fas fa-arrow-up" id="scroll-top"></a>
+    <div id="chatbot" class="main-card collapsed">
+      <button id="chatbot_toggle">
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 4v7H5.17l-.59.59-.58.58V4h11m1-2H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm5 4h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+    </svg>
+      </button>
+      <div class="main-title">
+        <div>
+          <svg width="64px" height="64px" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M308.878 323.257C308.878 323.257 338.135 305.311 338.878 300.786C339.621 296.261 318.678 263.408 318.678 263.408L334.719 232.616C334.719 232.616 382.695 286.038 381.204 303.461C379.713 320.884 329.592 362.339 329.592 362.339C329.592 362.339 308.458 323.391 308.877 323.257H308.878Z" fill="#FFA775"></path> <path d="M339.69 301.726C339.427 301.726 339.173 301.635 338.971 301.467C338.769 301.299 338.632 301.066 338.585 300.807C338.537 300.549 338.582 300.282 338.71 300.053C338.839 299.825 339.044 299.648 339.29 299.555C342.571 298.371 346.143 298.261 349.49 299.24C349.633 299.277 349.767 299.341 349.885 299.429C350.003 299.518 350.102 299.629 350.177 299.755C350.252 299.882 350.301 300.022 350.322 300.168C350.343 300.314 350.335 300.463 350.298 300.606C350.262 300.748 350.198 300.882 350.109 301C350.021 301.118 349.91 301.217 349.783 301.293C349.656 301.368 349.516 301.417 349.37 301.438C349.224 301.459 349.076 301.451 348.933 301.414C346.033 300.554 342.934 300.638 340.084 301.652C339.958 301.7 339.825 301.725 339.69 301.726Z" fill="#29263B"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M141.82 446.514L137.42 477.506C144.32 482.345 154.189 484.063 165.086 481.933L168.323 454.245L141.823 446.514H141.82Z" fill="#FFBF9B"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M199.984 350.709C189.621 353.601 172.695 355.859 165.763 365.539C151.175 385.917 144.977 418.362 140.524 447.63C146.793 451.41 157.407 456.109 166.854 455.346L164.033 481.928C208.548 493.259 249.883 491.817 289.343 482.836C296.18 451.481 297.779 417.728 297.784 398.202L336.048 372.374C334.5 351.574 326.236 328.139 309.648 320.353L252.672 348.122L199.983 350.709H199.984Z" fill="#86B4FF"></path> <path d="M167.317 456.434C167.26 456.434 167.203 456.43 167.147 456.421C166.853 456.376 166.589 456.216 166.412 455.977C166.236 455.737 166.162 455.437 166.207 455.143C169.97 430.419 171.275 410.584 170.315 392.72C170.307 392.573 170.328 392.426 170.377 392.287C170.426 392.148 170.502 392.02 170.601 391.91C170.699 391.8 170.818 391.711 170.951 391.648C171.084 391.584 171.228 391.547 171.375 391.539C171.523 391.532 171.67 391.553 171.809 391.602C171.948 391.651 172.076 391.727 172.185 391.825C172.295 391.924 172.384 392.043 172.448 392.176C172.511 392.309 172.548 392.453 172.556 392.6C173.524 410.621 172.212 430.6 168.426 455.481C168.385 455.746 168.251 455.988 168.048 456.163C167.844 456.338 167.585 456.434 167.317 456.434Z" fill="#29263B"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M141.794 218.271C130.849 215.496 125.479 208.119 131.811 191.087C112.711 179.339 111.339 165.457 136.821 148.333C119.989 126.126 134.963 106.433 162.911 118.723C164.273 98.151 173.311 89.635 194.745 100.615C198.945 74.308 233.851 70.248 242.098 96.404C258.498 77.562 286.859 91.304 282.857 111.497C305.981 104.772 327.857 124.949 319.041 147.391C339.762 149.741 343.841 169.639 333.986 180.601C355.412 191.367 352.457 208.844 338.748 213.948C349.819 234.52 349.588 248.148 331.74 250.964C332.967 268.036 326.14 282.947 309.092 276.732C305.044 288.876 294.716 293.952 284.624 288.439L141.794 218.271Z" fill="#29263B"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M157.4 181.6C157.4 181.6 117.21 235.151 126.782 277.816C138.03 327.947 191.982 326.396 208.664 327.016C211.804 354.039 198.837 352.526 198.837 352.526C189.328 395.383 237.806 396.516 256.81 346.677C241.865 338.74 240.501 324.877 260.31 295.139C291.268 318.408 318.197 271.561 287.565 261.124C281.699 254.477 283.765 242.587 291.533 237.446C276.386 238.368 280.14 222.769 288.864 212.255C266.22 218.518 264.935 205.888 273.839 190.001C251.797 199.522 243.532 189.001 248.191 173.472C230.12 193.307 207.936 193.69 212.249 172.487C192.739 193.872 172.873 194.82 173.983 177.514C168.847 185.548 158.77 187.934 157.397 181.597L157.4 181.6Z" fill="#FFA775"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M231.541 319.982C225.783 323.882 215.841 326.471 208.66 327.014C209.112 330.574 209.246 334.168 209.06 337.752C219.182 337.262 228.213 329.77 231.541 319.982Z" fill="#F08855"></path> <path d="M272.992 289.792C272.802 289.792 272.615 289.744 272.448 289.651C272.282 289.559 272.142 289.426 272.041 289.264C271.94 289.103 271.882 288.918 271.872 288.728C271.863 288.538 271.901 288.349 271.985 288.178C276.962 277.984 284.934 274.245 295.679 277.057C295.967 277.132 296.213 277.319 296.363 277.576C296.514 277.833 296.556 278.139 296.48 278.427C296.405 278.715 296.218 278.961 295.961 279.111C295.704 279.261 295.398 279.303 295.11 279.228C285.41 276.687 278.51 279.938 274.001 289.163C273.909 289.352 273.765 289.511 273.587 289.622C273.408 289.733 273.202 289.792 272.992 289.792Z" fill="#29263B"></path> <path d="M163.938 247.461C163.775 247.461 163.614 247.425 163.466 247.356C163.318 247.287 163.187 247.186 163.082 247.061C157.782 240.834 155.892 235.245 157.458 230.45C159.528 224.112 167.324 219.41 181.292 216.075C181.435 216.041 181.584 216.035 181.73 216.058C181.875 216.082 182.015 216.133 182.14 216.21C182.266 216.288 182.375 216.389 182.461 216.508C182.548 216.627 182.61 216.763 182.644 216.906C182.678 217.049 182.684 217.198 182.661 217.344C182.637 217.489 182.586 217.629 182.509 217.754C182.431 217.88 182.33 217.989 182.211 218.075C182.092 218.162 181.956 218.224 181.813 218.258C168.851 221.353 161.374 225.689 159.591 231.146C158.283 235.146 160.033 240.015 164.791 245.607C164.93 245.77 165.02 245.969 165.049 246.182C165.078 246.394 165.046 246.61 164.956 246.805C164.867 246.999 164.723 247.164 164.543 247.279C164.362 247.395 164.152 247.456 163.938 247.456V247.461Z" fill="#29263B"></path> <path d="M195.647 284.628C195.488 284.628 195.33 284.595 195.185 284.529C195.04 284.463 194.911 284.368 194.806 284.248C190.544 279.408 186.86 277.105 183.925 277.36C181.807 277.553 179.925 279.06 178.176 281.975C178.018 282.221 177.771 282.396 177.486 282.463C177.202 282.529 176.902 282.482 176.652 282.331C176.401 282.181 176.219 281.939 176.145 281.656C176.07 281.373 176.109 281.073 176.252 280.818C178.367 277.299 180.881 275.383 183.722 275.125C187.469 274.79 191.66 277.282 196.489 282.765C196.632 282.927 196.725 283.127 196.757 283.34C196.789 283.554 196.759 283.772 196.67 283.969C196.581 284.165 196.437 284.332 196.256 284.449C196.074 284.566 195.863 284.628 195.647 284.628Z" fill="#29263B"></path> <path d="M252.41 209.219C251.74 209.218 251.095 208.968 250.6 208.516C250.104 208.065 249.795 207.446 249.732 206.779C249.184 200.961 247.684 197.069 245.273 195.211C243.592 193.911 241.335 193.521 238.373 194.011C237.668 194.127 236.946 193.958 236.366 193.542C235.785 193.126 235.394 192.496 235.278 191.791C235.162 191.086 235.331 190.364 235.747 189.784C236.163 189.203 236.793 188.812 237.498 188.696C241.949 187.963 245.673 188.72 248.562 190.947C252.253 193.793 254.39 198.807 255.094 206.274C255.161 206.985 254.943 207.693 254.487 208.244C254.032 208.794 253.377 209.141 252.666 209.208C252.58 209.215 252.494 209.219 252.41 209.219Z" fill="#29263B"></path> <path d="M156.577 199.507C156.108 199.507 155.648 199.384 155.241 199.151C154.834 198.918 154.495 198.583 154.257 198.179C154.02 197.775 153.892 197.316 153.886 196.848C153.88 196.379 153.996 195.917 154.224 195.507C156.624 191.167 159.391 188.649 162.669 187.807C165.569 187.062 168.683 187.722 171.924 189.765C172.527 190.146 172.954 190.751 173.111 191.447C173.268 192.143 173.143 192.873 172.763 193.476C172.382 194.08 171.778 194.508 171.083 194.666C170.387 194.825 169.657 194.701 169.053 194.322C167.087 193.082 165.443 192.658 164.008 193.022C162.267 193.469 160.56 195.183 158.935 198.115C158.702 198.537 158.361 198.888 157.946 199.133C157.531 199.378 157.059 199.507 156.577 199.507Z" fill="#29263B"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M234.93 205.689C238.079 206.5 239.43 211.83 237.956 217.589C236.482 223.348 232.717 227.361 229.569 226.554C226.421 225.747 225.069 220.413 226.542 214.654C228.015 208.895 231.778 204.883 234.93 205.69V205.689Z" fill="#29263B"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M160.719 201C163.528 201.619 164.85 206.49 163.665 211.871C162.48 217.252 159.24 221.118 156.428 220.498C153.616 219.878 152.297 215.008 153.482 209.63C154.667 204.252 157.91 200.38 160.719 201Z" fill="#29263B"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M303.838 38.623C303.765 23.585 315.446 10.53 341.592 10.012C367.738 9.494 385.192 25.871 382.068 38.554C377.991 55.1 349.583 59.747 350.045 77.2C350.115 79.855 332.819 79.616 332.819 76.959C332.419 59.573 366.919 51.172 367.445 38.229C367.901 26.881 358.632 20.729 341.734 20.729C329.994 20.729 320.126 26.777 319.261 38.485C319.113 40.96 303.85 41.099 303.838 38.621V38.623Z" fill="#E1B100"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M341.336 85.449C347.926 85.449 353.275 88.992 353.275 93.358C353.275 97.724 347.926 101.265 341.336 101.265C334.746 101.265 329.4 97.722 329.4 93.358C329.4 88.994 334.749 85.449 341.337 85.449H341.336Z" fill="#E1B100"></path> </g></svg>
+          {% comment %} <svg viewBox="0 0 640 512" title="robot">
+            <path fill="currentColor" d="M32,224H64V416H32A31.96166,31.96166,0,0,1,0,384V256A31.96166,31.96166,0,0,1,32,224Zm512-48V448a64.06328,64.06328,0,0,1-64,64H160a64.06328,64.06328,0,0,1-64-64V176a79.974,79.974,0,0,1,80-80H288V32a32,32,0,0,1,64,0V96H464A79.974,79.974,0,0,1,544,176ZM264,256a40,40,0,1,0-40,40A39.997,39.997,0,0,0,264,256Zm-8,128H192v32h64Zm96,0H288v32h64ZM456,256a40,40,0,1,0-40,40A39.997,39.997,0,0,0,456,256Zm-8,128H384v32h64ZM640,256V384a31.96166,31.96166,0,0,1-32,32H576V224h32A31.96166,31.96166,0,0,1,640,256Z" />
+          </svg> {% endcomment %}
+        </div>
+        <span data-lang='vi'>Chatbot tư vấn tâm lý</span>
+        <span data-lang='en'>Mental therapy chatbot</span>
+    
+      </div>
+      <div class="chat-area" id="message-box">
+      </div>
+      <div class="line"></div>
+      <form method="POST" action="{% url 'server:chatbot' %}">
+      {% csrf_token %}
+      <div class="input-div">
+        <input class="input-message" name="message" type="text" id="message" autocomplete="off" placeholder="Nhập tin nhắn ..." />
+        <button type='submit' id='sendform' class="input-send">
+          <svg style="width:24px;height:24px">
+            <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z" />
+          </svg>
+        </button>
+        <button type='submit' id='flushform' class="input-send">
+          <svg style="width:24px;height:24px" fill="#000000" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M960 0v213.333c411.627 0 746.667 334.934 746.667 746.667S1371.627 1706.667 960 1706.667 213.333 1371.733 213.333 960c0-197.013 78.4-382.507 213.334-520.747v254.08H640V106.667H53.333V320h191.04C88.64 494.08 0 720.96 0 960c0 529.28 430.613 960 960 960s960-430.72 960-960S1489.387 0 960 0" fill-rule="evenodd"></path> </g></svg>
+        </button>
+        <a type='button' onclick='Speaker()' class="input-send">
+          <svg id='volumeon' style="width:26px;height:26px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 13C2 15.2091 3.79086 17 6 17H6.19669C6.69707 17 7.17928 17.1876 7.54814 17.5257L10.4773 20.2107C11.0311 20.7184 11.755 21 12.5063 21C13.7594 21 14.9494 20.2016 15.2601 18.8803C15.5904 17.476 16 15.1081 16 12C16 8.89192 15.5904 6.52403 15.2601 5.11974C14.9494 3.79838 13.7594 3 12.5063 3C11.755 3 11.0311 3.28161 10.4773 3.78926L7.54813 6.47431C7.17928 6.81243 6.69707 7 6.19669 7H6C3.79086 7 2 8.79086 2 11V13ZM6 15C4.89543 15 4 14.1046 4 13V11C4 9.89543 4.89543 9 6 9H6.19669C7.19745 9 8.16186 8.62486 8.89958 7.94862L11.8287 5.26357C12.0137 5.09404 12.2554 5 12.5063 5C12.9376 5 13.2384 5.25937 13.3132 5.57761C13.6134 6.85393 14 9.06723 14 12C14 14.9328 13.6134 17.1461 13.3132 18.4224C13.2384 18.7406 12.9376 19 12.5063 19C12.2554 19 12.0137 18.906 11.8287 18.7364L8.89958 16.0514C8.16186 15.3751 7.19745 15 6.19669 15H6Z" fill="#185adb"></path> <path d="M20.5723 6.09607C21.0716 5.85987 21.6677 6.0731 21.9039 6.57232C22.6447 8.13791 22.9979 10.0843 23 11.9889C23.0021 13.8934 22.6531 15.8479 21.9036 17.4285C21.6669 17.9275 21.0706 18.1402 20.5715 17.9036C20.0725 17.6669 19.8598 17.0706 20.0964 16.5715C20.6881 15.3238 21.0018 13.679 21 11.991C20.9981 10.303 20.6808 8.66357 20.0961 7.42768C19.8599 6.92845 20.0731 6.33227 20.5723 6.09607Z" fill="#185adb"></path> <path d="M17.5528 15.8944C17.0588 15.6474 16.8586 15.0468 17.1056 14.5528C17.9648 12.8343 17.9648 11.1657 17.1056 9.44721C16.8586 8.95324 17.0588 8.35256 17.5528 8.10557C18.0468 7.85858 18.6474 8.05881 18.8944 8.55279C20.0352 10.8343 20.0352 13.1657 18.8944 15.4472C18.6474 15.9412 18.0468 16.1414 17.5528 15.8944Z" fill="#185adb"></path> </g></svg>
+          <svg id='volumeoff' class='d-none' style="width:26px;height:26px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.54721 7.272L5.51262 5.23741C5.1221 4.84689 5.1221 4.21372 5.51262 3.8232C5.90314 3.43267 6.53631 3.43267 6.92683 3.8232L21.9268 18.8232C22.3174 19.2137 22.3174 19.8469 21.9268 20.2374C21.5363 20.6279 20.9031 20.6279 20.5126 20.2374L18.4203 18.1451C18.3662 18.4135 18.3122 18.6589 18.2601 18.8803C17.9494 20.2016 16.7594 21 15.5063 21C14.755 21 14.0311 20.7184 13.4773 20.2107L10.5481 17.5257C10.1793 17.1876 9.69707 17 9.19669 17H9C6.79086 17 5 15.2091 5 13V11C5 9.30335 6.05633 7.85341 7.54721 7.272ZM16.6905 16.4153C16.5716 17.2295 16.4353 17.9034 16.3132 18.4224C16.2384 18.7406 15.9376 19 15.5063 19C15.2554 19 15.0137 18.906 14.8287 18.7364L11.8996 16.0514C11.1619 15.3751 10.1975 15 9.19669 15H9C7.89543 15 7 14.1046 7 13L7 11C7 9.89543 7.89543 9 9 9H9.19669C9.22263 9 9.24856 8.99975 9.27445 8.99924L16.6905 16.4153Z" fill="#185adb"></path> <path d="M16.3132 5.57761C16.6057 6.821 16.9801 8.95363 16.9992 11.7744L18.9569 13.7321C18.9844 13.184 19 12.6061 19 12C19 8.89192 18.5904 6.52403 18.2601 5.11974C17.9494 3.79838 16.7594 3 15.5063 3C14.755 3 14.0311 3.28161 13.4773 3.78926L11.1487 5.92383L12.5642 7.33938L14.8287 5.26357C15.0137 5.09404 15.2554 5 15.5063 5C15.9376 5 16.2384 5.25937 16.3132 5.57761Z" fill="#185adb"></path> </g></svg>
+        </a>
+      </div>
+    </form>
+    </div>
+  </span>
+    <script>
+      var isflushed = true;
+      var msg;
+      var usermsg;
+      var running = false;
+      var ispaused = false;
+      var voiceoff = false;
+      var backupmsg = '';
+      var iteration;
+      var arraylength;
+
+      function addVoice(msg){
+        if (ispaused == false){
+          if (findLang == 'vi'){
+          responsiveVoice.speak(msg,"Vietnamese Female",{volume:1});
+          } else {
+          responsiveVoice.speak(msg,"UK English Female",{volume:1});}}
+      }
+
+      function Speaker(){
+        if (ispaused == false){
+          $("#volumeoff").removeClass("d-none");
+          $("#volumeon").addClass("d-none");
+          ispaused = true;
+          responsiveVoice.pause();
+        } else {
+          $("#volumeon").removeClass("d-none");
+          $("#volumeoff").addClass("d-none");
+          ispaused = false;
+          if (voiceoff == false){
+            responsiveVoice.resume();
+          } else {
+            voiceoff = false;
+            responsiveVoice.cancel();
+            addVoice(backupmsg);
+          }
+        }
+      }
+
+      $(document).on('click','#sendform', function(event){
+        event.preventDefault();
+        if (running == true) return;
+        usermsg = document.getElementById("message").value;
+        if (usermsg == "") return;
+        running = true;
+        addMsg(usermsg);
+        loadMSg();
+        $.ajax({
+          type:'POST',
+          url:'{% url "server:chatbot" %}',
+          data:
+          {
+            lang: findLang,
+            sendform: usermsg,
+            csrfmiddlewaretoken: '{{ csrf_token }}'
+          },
+          success:function(data){
+            if (typeof data['response'] === 'string'){
+            backupmsg = data['response'];
+            addResponseMsg(data['response']);
+            } else {
+              iteration = 1;
+              arraylength = data['response'].length;
+              iterateAndPush(data['response'], addResponseText);
+            }
+            }
+          })
+      });
+
+      async function iterateAndPush(array, pushFunction) {
+        for (const element of array) {
+          await pushFunction(element);
+          // Wait for the 'typingAnimationComplete' event before moving on to the next iteration
+          await new Promise(resolve => $(document).one('typingAnimationComplete', resolve));
+        }
+      }
+
+      function addResponseText(msg) {
+        if (msg != 'end'){
+        $('#sendform').prop('disabled', true);
+        if (ispaused == true){
+          voiceoff = true;
+        }
+        addVoice(msg);
+        $(".chat-message-received").typed({
+          strings: [msg],
+          typeSpeed: 0,
+          startDelay: 0,
+          cursorChar: "",
+          loop:false,
+          contentType: 'html',
+          // add callback function to execute when typing is complete
+          callback: function() {
+            document.getElementById("message-box").scrollTop = document.getElementById(
+              "message-box"
+            ).scrollHeight;
+            running = false;
+            if (iteration < arraylength){
+            ++iteration;
+              setTimeout(function(){
+                var div = document.createElement("div");
+                div.innerHTML = "<div class='chat-message-received'></div>";
+                div.className = "chat-message-div";
+                document.getElementById("message-box").appendChild(div);
+                $(document).trigger('typingAnimationComplete');},3000);}
+            else {
+              $('#sendform').prop('disabled', false);
+            }
+          }
+        });
+      }}
+
+      $(document).on('click','#flushform', function(event){
+        event.preventDefault();
+        $('#flushform').prop('disabled', true);
+        $('#sendform').prop('disabled', true);
+        $.ajax({
+          type:'POST',
+          url:'{% url "server:chatbot" %}',
+          data:
+          {
+            lang: findLang,
+            flushform: '1',
+            csrfmiddlewaretoken: '{{ csrf_token }}'
+          },
+          success:function(data){
+            var div = document.createElement("div");
+              div.innerHTML = "<div class='chat-message-received'></div>";
+              div.className = "chat-message-div";
+              document.getElementById("message-box").appendChild(div);
+            addResponseMsg(data['response']);
+            setTimeout(function(){
+              var div = document.createElement("div");
+              div.innerHTML = "<div class='chat-message-received'></div>";
+              div.className = "chat-message-div";
+              document.getElementById("message-box").appendChild(div);
+              if (findLang == 'vi'){
+              addResponseMsg("Hôm nay bạn cảm thấy như thế nào? Hãy chia sẻ cho tôi biết nhé!");
+              } else {
+              addResponseMsg("How are you feeling today? Feel free to share with me!");
+              }
+              $('#flushform').prop('disabled', false);
+            },3000)
+            }
+          })
+      });
+
+      function loadMSg(){
+        var div = document.createElement("div");
+        div.innerHTML = "<div class='chat-message-received'><div class='loading-bot loading-0'></div><div class='loading-bot loading-1'></div><div class='loading-bot loading-2'></div></div>";
+        div.className = "chat-message-div";
+        document.getElementById("message-box").appendChild(div);
+        document.getElementById("message-box").scrollTop = document.getElementById(
+          "message-box"
+        ).scrollHeight;
+      }
+
+      function addMsg(usermsg) {
+        var div = document.createElement("div");
+        div.innerHTML =
+          "<span style='flex-grow:1'></span><div class='chat-message-sent'>" +
+          usermsg +
+          "</div>";
+        div.className = "chat-message-div";
+        document.getElementById("message-box").appendChild(div);
+        //SEND MESSAGE TO API
+        document.getElementById("message").value = "";
+        document.getElementById("message-box").scrollTop = document.getElementById(
+          "message-box"
+        ).scrollHeight;
+      }
+
+      function addResponseMsg(msg) {
+        $('#sendform').prop('disabled', true);
+        if (ispaused == true){
+          voiceoff = true;
+        }
+        addVoice(msg);
+        $(".chat-message-received").typed({
+          strings: [msg],
+          typeSpeed: 10,
+          startDelay: 0,
+          cursorChar: "",
+          loop:false,
+          contentType: 'html',
+          // add callback function to execute when typing is complete
+          callback: function() {
+            document.getElementById("message-box").scrollTop = document.getElementById(
+              "message-box"
+            ).scrollHeight;
+            running = false;
+            if (msg != 'Đã làm mới cuộc trò chuyện' && msg != 'Conversation has been cleared'){
+            $('#sendform').prop('disabled', false);}
+          }
+        });
+      }
+
+      document.getElementById("chatbot_toggle").onclick = function () {
+          if (findLang == 'vi'){
+            $('#message').attr("placeholder", "Nhập tin nhắn ...")
+          } else {
+            $('#message').attr("placeholder", "Type your message ...")
+          }
+
+          if (document.getElementById("chatbot").classList.contains("collapsed")) {
+            document.getElementById("chatbot").classList.remove("collapsed")
+            document.getElementById("chatbot_toggle").children[0].style.display = "none"
+            document.getElementById("chatbot_toggle").children[1].style.display = ""
+            if (isflushed == true){
+            //initial message
+            isflushed = false;
+            var div = document.createElement("div");
+            div.innerHTML = "<div class='chat-message-received'></div>";
+            div.className = "chat-message-div";
+            document.getElementById("message-box").appendChild(div);
+            if (findLang == 'vi'){
+            setTimeout(addResponseMsg,1000,"Hôm nay bạn cảm thấy như thế nào? Hãy chia sẻ cho tôi biết nhé!")
+            } else {
+            setTimeout(addResponseMsg,1000,"How are you feeling today? Feel free to share with me!")
+            }}
+          } else {
+            document.getElementById("chatbot").classList.add("collapsed")
+            document.getElementById("chatbot_toggle").children[0].style.display = ""
+            document.getElementById("chatbot_toggle").children[1].style.display = "none"
+          }
+        }
+    </script>
+    <!--?======================== Scroll Up ========================= -->
+
+    <!--? jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+    <script src="{% static 'server/js/mode.js' %}"></script>
+
+    <!--? Tilt-Vannila.js -->
+    <script src="{% static 'server/js/vanilla-tilt.min.js' %}"></script>
+
+    <!--? Main JavaScript -->
+    <script src="{% static 'server/js/script.js' %}"></script>
+    <script src='{% static "server/js/survey.js" %}'></script>
+    <script src='{% static "server/js/language.js" %}'></script>
+    <script>
+      function ErrorPred(){
+        if (findLang == 'en') {
+          Swal.fire({
+            toast: true,
+            icon: 'error',
+            title: 'Not enough data to make prediction',
+            animation: true,
+            position: 'top-right',
+            showConfirmButton: false,
+            timer: 7000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)}});
+        } else if (findLang == 'vi') {
+          Swal.fire({
+            toast: true,
+            icon: 'error',
+            title: 'Không đủ dữ liệu để đưa ra dự đoán',
+            animation: true,
+            position: 'top-right',
+            showConfirmButton: false,
+            timer: 7000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)}});
+        }
+      };
+
+      function BetterTrend(){
+        if (findLang == 'en') {
+          Swal.fire({
+            toast: true,
+            icon: 'info',
+            title: 'Your mood and emotional wellness are improving. Keep up the good work! 🎉',
+            animation: true,
+            position: 'top-right',
+            showConfirmButton: false,
+            timer: 10000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)}});
+        } else if (findLang == 'vi') {
+          Swal.fire({
+            toast: true,
+            icon: 'info',
+            title: 'Tâm trạng và tinh thần của bạn đang được cải thiện. Hãy tiếp tục nhé! 🎉',
+            animation: true,
+            position: 'top-right',
+            showConfirmButton: false,
+            timer: 10000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)}});
+        }
+      };
+
+      function WorseTrend(){
+        if (findLang == 'en') {
+          Swal.fire({
+            toast: true,
+            icon: 'info',
+            title: "You seems to be going through a tough time, so please take some time for self-care and reach out for support if you need it. You've got this! 🙆‍♀️",
+            animation: true,
+            position: 'top-right',
+            showConfirmButton: false,
+            timer: 10000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)}});
+        } else if (findLang == 'vi') {
+          Swal.fire({
+            toast: true,
+            icon: 'info',
+            title: 'Tâm trạng của bạn có vẻ đang xấu đi, vì vậy hãy dành thời gian cho việc chăm sóc bản thân và tìm kiếm sự hỗ trợ nếu bạn cần. Bạn có thể làm được! 🙆‍♀️',
+            animation: true,
+            position: 'top-right',
+            showConfirmButton: false,
+            timer: 10000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)}});
+        }
+      };
+    </script>
+    <script>
+      var widthupdate = window.innerWidth*0.6;
+      var heightupdate = window.innerHeight*0.5;
+      var chartData = {{chartdata|safe}}
+      var triggerpred = '{{prediction}}';
+      var trend = '{{trend}}';
+      $(document).ready(function(){
+        if(username != '0'){
+        var chart = c3.generate({
+          bindto: '#chart1',
+          size: {
+            height: heightupdate,
+            width: widthupdate },
+          data: {
+              columns: chartData,
+              y: 'Value',
+              type: 'line'
+          },
+          axis: {
+            y: {
+                max: 1,
+                min: -0.2,
+            }
+          },       
+          subchart: {
+            show: true
+          },
+          zoom: {
+            enabled: true
+          }
+        });
+      }});
+
+      try {
+        regData = {{reg_dataset|safe}};
+        $(document).ready(function(){
+        if (trend == '1'){
+          BetterTrend();
+        } else if (trend == '-1'){
+          WorseTrend();
+        }});
+      }
+      catch(err) {
+        ErrorPred();
+        regData = [['Date'],['Estimation'],['Regression']];
+      }
+
+      $(document).ready(function(){
+        if(username != '0'){
+        var chart2 = c3.generate({
+          bindto: '#chart2',
+          data: {
+            columns:  regData,
+            x: 'Date',
+            type: 'scatter',
+            types: {
+                Regression: "line",
+            }
+          },
+          axis: {
+            y: {
+              label: {
+                text: "Estimation",
+                position: "outer-middle"
+              }  
+            },
+            x: {
+              label: {
+                text: "Date",
+                position: "outer-center"
+              },
+              type: 'category'
+            }
+          },
+          size: {
+            height: heightupdate,
+            width: widthupdate
+          },
+          zoom: {
+            enabled: true
+          },
+          legend: {
+            show: true
+          },
+        });
+      }});
+
+      window.onload = function () {if(triggerpred == '0') {
+        jQuery('#chart1').addClass('d-none');
+        jQuery('#chart2').removeClass('d-none');
+      }
+      else{
+        jQuery('#chart2').addClass('d-none');
+        jQuery('#chart1').removeClass('d-none');
+      }};
+    </script>
+</html>

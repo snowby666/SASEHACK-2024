@@ -1,0 +1,19 @@
+{
+    "name": "coDestress",
+    "short_name": "coDestress - Mood Lifter: Music therapy for everyone",
+    "icons": [
+        {
+            "src": "/server/static/server/icon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/server/static/server/icon/android-chrome-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}

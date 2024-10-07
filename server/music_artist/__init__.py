@@ -1,0 +1,1 @@
+from server.music_artist.artist import MusicArtist

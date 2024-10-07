@@ -1,0 +1,175 @@
+#content:not(.en) [data-lang=en], #content:not(.vi) [data-lang=vi], #content2:not(.en) [data-lang=en], #content2:not(.vi) [data-lang=vi],
+#s1:not(.en) [data-lang=en], #s1:not(.vi) [data-lang=vi], #s2:not(.en) [data-lang=en], #s2:not(.vi) [data-lang=vi], 
+#s3:not(.en) [data-lang=en], #s3:not(.vi) [data-lang=vi], #s4:not(.en) [data-lang=en], #s4:not(.vi) [data-lang=vi]
+{
+display: none;
+}
+/* #content.en [data-lang=en], #content.vi [data-lang=vi] {
+display: block;
+} */
+span {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 968px) {
+  .lan-loader {
+    padding-left: 22vmin;
+    padding-bottom: 4.5vmin;
+  }
+}
+
+@media (max-width: 568px) {
+  .lan-loader {
+    padding-left: 13.5vmin;
+    padding-bottom: 4.5vmin;
+  }
+}
+
+.switch {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.current {
+  text-transform: uppercase;
+  height: 42px;
+  position: relative;
+  z-index: 0;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 42px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.2s ease-out;
+  border-radius: 3px;
+  padding: 0.5em 0.2em 0 0.7em;
+}
+
+@media screen and (max-width: 968px) {
+  .current {
+    padding: 0 0.2em 0 0.7em;
+  }
+}
+
+.current span {
+  color: var(--text-color);
+  display: inline-block;
+  line-height: 1;
+  padding: 0.7em 0.2em 0 0;
+}
+
+.current .arrow {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+/* .current:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+} */
+
+.options {
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  z-index: 0;
+  opacity: 0;
+  transition: all 0.36s ease-out;
+  display: none;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  text-align: center;
+  border-radius: 10px;
+}
+@media screen and (max-width: 968px) {
+  .options {
+    top: unset;
+    bottom:0.8em;
+  }
+}
+.switch.show-options .options {
+  display: block;
+  z-index: 5;
+}
+.switch.anim-options .options {
+  opacity: 1;
+}
+.switch.show-shadow .options {
+  box-shadow: 0 2px 12px -4px rgba(0, 0, 0, 0.4);
+}
+.options-list {
+  color: #313436;
+  margin: 0;
+  padding: 0.4rem 0.8em;
+  position: relative;
+  z-index: 5;
+  border-radius: 10px;
+}
+@media screen and (max-width: 968px) {
+  .options-list {
+    padding: 2em 3em 2em 2em;
+  }
+}
+@media screen and (max-width: 300px) {
+  .options-list {
+    padding: 2em 1em 2em 1em;
+  }
+}
+.options-list li {
+  display: contents;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 0.75em;
+  border-bottom: 1px solid #e1e4e6;
+  transform: translateX(10px);
+  transition: all 0.24s ease-out;
+  transition-delay: 0.1s;
+  opacity: 0;
+  font-size: 1rem;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+.options-list li:last-child {
+  border-bottom: none;
+}
+.options-list li:nth-child(1) {
+  transition-delay: 0.2s;
+}
+.options-list li:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.options-list li.selected {
+  color: #3498db;
+}
+.switch.anim-options .options-list li {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#trans-circle {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  z-index: 1;
+  transition: all 0.4s ease-out;
+  transform: scale(0.5);
+  overflow: hidden;
+}
+#trans-circle svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.switch.anim-options #trans-circle {
+  transform: scale(9);
+}
+.current em.arrow svg g path {
+  fill: var(--text-color);
+}
